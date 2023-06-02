@@ -1,0 +1,47 @@
+===========================================================
+========================== STEPS ==========================
+===========================================================
+Make sure that you have Python v3.9.13 or above installed.
+
+1. Open command prompt and goto your project folder.
+2. Type the following command,
+   "python -m venv env"
+3. Activate the environment by typing the following command in CMD,
+   "env\Scripts\activate"
+4. Now, type the following command, 
+   "pip install -r requirements.txt"
+5. Run the server.py
+
+===========================================================
+====================== CONFIGURATION ======================
+===========================================================
+https://www.whoisxmlapi.com/      - 50 API Calls
+https://www.ipqualityscore.com    - 5,000 API Calls
+
+Goto the above websites and make your own account.
+Get the API (Free) and replace the API key on the 
+corresponding variables in the server.py
+
+Line 12: ipqualityscore API Key
+Line 13: whoisxmlapi API Key
+
+===========================================================
+========================== USAGE ==========================
+===========================================================
+Note: Replace http://127.0.0.1:5000 with your Flask server
+      URL.
+
+URL Scanning		:  http://127.0.0.1:5000/url_scan
+SQL Injection Detection :  http://127.0.0.1:5000/sql
+XSS Detection		:  http://127.0.0.1:5000/xss
+Subdomain Scanning      :  http://127.0.0.1:5000/subdomain
+
+The body should be as follows,
+
+{
+    "url": "https://www.google.com"
+}
+
+And body type should be RAW.
+
+===========================================================
